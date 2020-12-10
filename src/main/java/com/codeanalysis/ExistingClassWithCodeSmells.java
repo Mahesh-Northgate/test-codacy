@@ -20,5 +20,7 @@ public class ExistingClassWithCodeSmells {
 		String thisdataistoolbigtobeconsideredforcalculation = "data";
 		
 		String thisdataistoolbigtobeconsideredforcalculation1 = "data1";
+		
+		String thisdataistoolbigtobeconsideredforcalculation2 = "data2";
 	}
 }
