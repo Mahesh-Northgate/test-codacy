@@ -18,5 +18,7 @@ public class ExistingClassWithCodeSmells {
 		System.out.println(data1+data2+data3+data4+data5+data6+data7);
 		
 		String thisdataistoolbigtobeconsideredforcalculation = "data";
+		
+		String thisdataistoolbigtobeconsideredforcalculation1 = "data1";
 	}
 }
