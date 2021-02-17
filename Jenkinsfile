@@ -1,3 +1,4 @@
+@Library("test-codacy@main")
 pipeline {
   agent any
   stages {
