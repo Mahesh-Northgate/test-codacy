@@ -1,3 +1,4 @@
 def call() {
-    println 'This code has been executed from library file.'
+    String text = 'This code has been executed from library file.'
+    return text
 }
