@@ -9,6 +9,7 @@ pipeline {
         script{
             String data = testLibrary.call()
             println data
+            println getTestResultSummary.call()
         }
         
         echo testLibrary()
