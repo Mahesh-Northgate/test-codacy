@@ -9,7 +9,9 @@ pipeline {
         script{
             String data = testLibrary.call()
             println data
-            println getTestResultSummary.call()
+             int maxDisplayMessages = 5
+             String directory = 'C:/office'
+             println getTestResultSummary.call(maxDisplayMessages, directory, "${env.BUILD_URL}testReport")
         }
         
         echo testLibrary()
