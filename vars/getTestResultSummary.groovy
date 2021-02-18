@@ -1,11 +1,9 @@
 import groovy.json.JsonSlurper
 
 
-String call() { 
+String call(int maxDisplayMessages, String directory, String testReportUrl) { 
         String summary = ' \u2022 ';
-        int maxDisplayMessages = 5
         try {
-            String directory = "C:/office"
             int totalScenariosCount = 0
             def totalScenarios = []
             def failedScenarios = []
@@ -33,7 +31,7 @@ String call() {
                 }
 
                 if (i > maxDisplayMessages) {
-                    summary += "\n \u2022 _${slackLink("\u2026${failedScenarios.size() - maxDisplayMessages} more", "${env.BUILD_URL}testReport")}_"
+                    summary += "\n \u2022 _${slackLink("\u2026${failedScenarios.size() - maxDisplayMessages} more", testReportUrl)}_"
                 }
             } else {
                 summary = null
