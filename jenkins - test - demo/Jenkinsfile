@@ -3,6 +3,11 @@
 pipeline {
   agent any
   stages {
+    stage('checkout/clean') {
+      steps {
+        getCheckout('main')
+      }
+    }
     stage('stage1') {
       steps {
         echo "This is the $BUILD_NUMBER of demo $DEMO"
